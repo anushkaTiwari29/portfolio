@@ -445,7 +445,7 @@ html, body {
 /* HERO
 ================================================== */
 .hero {
-  background: url(../img/mainbg.png) center no-repeat;
+  background: url(../img/mainBg.png) center no-repeat;
   height: 95%;
   width: 100%;
   display: table;
@@ -612,9 +612,13 @@ html, body {
   /* HERO */
   .hero-content h1 {
     font-size: 32px;
+    position: relative;
+    bottom: 245px;
   }
   .hero-content p {
     margin: 20px auto 0;
+    position: relative;
+    bottom: 245px;
   }
 }
 
@@ -764,13 +768,17 @@ html, body {
   {
     margin-left: 1% !important;
     font-size: small;
-    height: 11vh;
     margin-bottom: 5%;
+  }
+
+  .progress-group
+  {
+    width: 100% !important;
   }
 
   .hero 
   {
-    background: url(../img/bgres.png) center no-repeat;
+    background: url(../img/bgRes.png) center no-repeat;
   }
 
 
@@ -868,6 +876,9 @@ html, body {
   .section-hello .main-service p {
     margin-top: 15px;
   }
+  .section-about .col-xs-6 {
+        width: 100% !important;
+    }
 }
 
 /* Section: About */
@@ -1623,6 +1634,7 @@ html, body {
   .section-team .col-xs-6:nth-child(n+3) {
     margin-top: 30px;
   }
+
 }
 
 @media only screen and (max-width: 767px) {
