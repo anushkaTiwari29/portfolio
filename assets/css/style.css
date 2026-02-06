@@ -117,7 +117,7 @@ html, body {
   margin: 0 auto;
   width: 230px;
   height: 230px;
-  background-color: #9A869F;
+  background-color: #e0dedb;
   border: 0;
   transform: translate(-50%, -50%) rotate(45deg);
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
@@ -276,6 +276,7 @@ html, body {
 ================================================== */
 .site-header {
   height: 60px;
+  background-color: black;
 }
 
 .site-logo {
@@ -310,48 +311,44 @@ html, body {
 
 /* Navigation */
 .site-navigation {
-  background-color: #9A869F;
+  background-color: black;
 }
 
-.site-navigation.affix {
+/* .site-navigation.affix {
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
   z-index: 1005;
-}
+} 
+nav bar commented
+*/ 
 
 .site-navigation .navbar-nav {
-  padding-top: 23px;
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-around;/* equal spacing */
+  align-items: center;
+  width: 100%;
 }
 
 .site-navigation .navbar-nav > li > a {
-  padding: 0px 3px 21px;
-  font-size: large;
-  line-height: 1px;
-  color: #ffffff;
+  padding: 2%;
+  font-size: x-large;
+  font-weight: bold;
+  color: #e0dedb;
   text-transform: uppercase;
-  border-bottom: 2px solid transparent;
   -webkit-transition: border-color 0.25s ease-in-out;
   -o-transition: border-color 0.25s ease-in-out;
   -moz-transition: border-color 0.25s ease-in-out;
   transition: border-color 0.25s ease-in-out;
 }
 
-.site-navigation .navbar-nav.navbar-right {
-  margin-right: 0;
-}
-
-.site-navigation .navbar-nav > li + li > a {
-  margin-left: 25px;
-}
-
-.navbar-nav > li > a:hover,
-.navbar-nav > li.active > a,
-.nav > li > a:hover,
-.nav > li.active > a {
-  background-color: transparent;
-  border-color: #ffffff;
+.site-navigation .navbar-nav > li > a:hover,
+.site-navigation .navbar-nav > li > a:focus,
+.site-navigation .navbar-nav > li.active > a {
+    background-color: transparent !important;
+    transform: scale(1.05);
 }
 
 .nav > li > a:focus {
@@ -445,8 +442,8 @@ html, body {
 /* HERO
 ================================================== */
 .hero {
-  background: url(../img/mainBg.png) center no-repeat;
-  height: 95%;
+  background: url(../img/background.png) center no-repeat;
+  height: 105%;
   width: 100%;
   display: table;
   position: relative;
@@ -460,7 +457,7 @@ html, body {
 
 .background-overlay:before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -631,21 +628,22 @@ html, body {
  
 #contact
 {
-  background: #f6f6f6;
+  background: black;
 }
 
 /*
  * Sections
  */
 .site-section {
-  padding: 100px 0;
+  padding: 2% 0;
+  background-color: black;
 }
 
 .site-section h2 {
   font-family: "Quintessential", serif;
   margin: 0;
   font-size: 32px;
-  color: #9A869F;
+  color: #e0dedb;
   text-align: center;
   text-transform: uppercase;
 }
@@ -656,30 +654,16 @@ html, body {
   margin: 15px 0 0;
   font-size: 16px;
   line-height: 16px;
-  color: #545050;
-  letter-spacing: 2px;
+  color: white;
+  letter-spacing: 4px;
   text-align: center;
-  text-transform: uppercase;
   font-weight: bold;
+  font-style: italic;
 }
 
 .section-subtitle span {
   position: relative;
-}
-
-.section-subtitle span:before, .section-subtitle span:after {
-  display: inline-block;
-  content: '';
-  height: 1px;
-  background-color: #666;
-  width: 20px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
+  color: #e0dedb;
 }
 
 .section-subtitle span:before {
@@ -712,14 +696,14 @@ html, body {
   margin: 0 auto;
   height: 1px;
   width: 20%;
-  background-color: #666;
+  background-color: #e0dedb;
 }
 
 #contactrow
 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-top: 3%;
-  background-color: #9A869F;
+  background-color: black
   color: white;
   padding-bottom: 3%;
 }
@@ -896,21 +880,25 @@ html, body {
 
 .section-about .rectangle i {
   font-size: 28px;
+  color: #e0dedb;
 }
 
 .feature-about h3 {
-  font-family: "Revalia", sans-serif;
+  font-family: "Poiret One", sans-serif;
+  line-height: 16px;
   margin: 50px 0 0;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: #e0dedb;
 }
 
 .feature-about p {
   font-family: "Poiret One", sans-serif;
   font-size: 16px;
   line-height: 16px;
-  color: #545050;
+  color: #e0dedb;
   letter-spacing: 3px;
   text-align: center;
   font-weight: bold;
@@ -944,7 +932,7 @@ html, body {
 
 /* Section: Skills */
 .section-skills {
-  background-color: #f6f6f6;
+  background: black;
 }
 
 .section-skills h2 {
@@ -952,7 +940,7 @@ html, body {
   padding-bottom: 20px;
   margin-bottom: 40px;
   font-size: 18px;
-  color: #000;
+  color: #e0dedb;
   text-transform: uppercase;
   text-align: left;
 }
@@ -964,7 +952,7 @@ html, body {
   display: block;
   width: 40px;
   height: 1px;
-  background-color: #000;
+  background-color: #e0dedb;
 }
 
 .section-skills p {
@@ -979,6 +967,7 @@ html, body {
 .progress-group p {
   margin: 0;
   font-family: "Quintessential", serif;
+  color: #e0dedb;
 }
 
 .progress-group + .progress-group {
@@ -997,7 +986,7 @@ html, body {
 
 .progress-bar {
   position: relative;
-  background-color: #9A869F;
+  background-color: #e0dedb;
   height: 10px;
 }
 
@@ -1010,7 +999,7 @@ html, body {
   height: 0;
   border-style: solid;
   border-width: 0 15px 20px 15px;
-  border-color: transparent transparent #9A869F transparent;
+  border-color: transparent transparent #e0dedb transparent;
   z-index: 2;
 }
 
@@ -1032,7 +1021,7 @@ html, body {
   position: absolute;
   top: -30px;
   right: -7px;
-  color: #000;
+  color: #e0dedb;
   z-index: 3;
 }
 
@@ -1101,14 +1090,12 @@ html, body {
 
 /* Section: Services */
 .section-services.site-section {
-  padding: 0;
-  background-color: #f6f6f6;
+  background-color: #e0dedb;
 }
 
 .section-services .container-fluid {
   padding: 4% 2% 0%;
-  background-color: #F6F6F6;
-  margin: 8% 2% -3% 2%;;
+  background-color: #e0dedb;
 }
 
 .section-services .container-fluid + .container {
@@ -1132,8 +1119,7 @@ html, body {
 
 .section-services .nav-tabs .col-sm-fifth {
   height: 160px;
-  background: #ffffff;
-  border-bottom: 3px solid #9A869F;
+  background: ##e0dedb;
 }
 
 .section-services .carousel-inner {
@@ -1203,22 +1189,30 @@ html, body {
   display: table-cell;
   vertical-align: middle;
   color: #000;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .service .rectangle {
   margin: 0 auto 20px;
   box-shadow: none;
 }
+.site-section h3 {
+    font-family: "Quintessential", serif;
+    margin-top: 5%;
+    color: black;
+    text-align: center;
+    font-style: italic;
+}
 
 .service p {
   position: absolute;
   font-family: 'Quintessential';
-  font-size: medium !important;
+  font-size: large;
   left: 0;
   right: 0;
   margin-bottom: 0;
   text-transform: uppercase;
-  font-size: 12px;
+  font-weight: bold;
 }
 
 .section-services .col-sm-7 {
@@ -1234,7 +1228,6 @@ html, body {
 .service-info h3 {
   font-size: x-large;
   margin: 5% 0 0;
-  font-family: 'Bruno Ace SC';
 }
 
 .service-info p {
@@ -1259,7 +1252,7 @@ html, body {
 
 .carousel-indicators .active .col-sm-fifth,
 .carousel-indicators a:hover .col-sm-fifth {
-  background-color: #9A869F;
+  background-color: black;
 }
 
 .carousel-indicators .active .service p,
@@ -1282,7 +1275,7 @@ html, body {
 }
 
 .carousel-indicators .active .service .rectangle {
-  color: #9A869F;
+  color: black;
 }
 
 .carousel-indicators .active .service:after {
@@ -1296,7 +1289,7 @@ html, body {
   height: 0;
   border-style: solid;
   border-width: 15px 15px 0 15px;
-  border-color: #9A869F transparent transparent transparent;
+  border-color: black transparent transparent transparent;
   z-index: 99;
 }
 
@@ -1550,6 +1543,7 @@ html, body {
   z-index: 2;
   border: 1px solid #ccc;
   width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .team-member .team-member-front .team-member-thumb {
@@ -1573,9 +1567,9 @@ html, body {
 .team-member .team-member-back {
   padding: 0 20px;
   display: table;
-  background: #9A869F;
+  background: black;
   text-align: center;
-  color: #ffffff;
+  color: #e0dedb;
   transform: rotateY(-180deg);
   -webkit-transform: rotateY(-180deg);
   -moz-transform: rotateY(-180deg);
@@ -1595,6 +1589,7 @@ html, body {
   font-size: larger;
   font-weight: 600;
   font-family: 'Quintessential';
+  color: #e0dedb;
 }
 
 .team-member .team-member-back .team-member-back-position {
@@ -1626,7 +1621,11 @@ html, body {
 }
 
 .main-menu.collapse ul.nav li {
-  font-family: "Revalia", sans-serif; /* Replace "Your Chosen Font" with the desired font */
+  font-family: "Quintessential", serif; /* Replace "Your Chosen Font" with the desired font */
+}
+
+.site-section.section-works {
+    background-color: #e0dedb;
 }
 
 @media only screen and (max-width: 991px) {
@@ -1657,16 +1656,15 @@ html, body {
 /* Section: History */
 .section-history {
   padding: 70px 0;
-  background-color: #f6f6f6;
+  background-color: black;
 }
 
 .section-history .section-diff-title h2 {
   font-family: "Quintessential", serif;
   margin: 0;
   font-size: 32px;
-  color: #9A869F;
+  color: #e0dedb;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .section-history .section-diff-title p {
@@ -1674,7 +1672,7 @@ html, body {
   font-family: "Poiret One", sans-serif;
   font-size: 16px;
   line-height: 16px;
-  color: #545050;
+  color: #e0dedb;
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
@@ -1721,7 +1719,7 @@ html, body {
   position: relative;
   left: 0.5px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: #e0dedb;
   box-shadow: none;
 }
 
@@ -1745,7 +1743,7 @@ html, body {
   position: absolute;
   top: 15px;
   right: 0px;
-  background-color: #f6f6f6;
+  background-color: #d5ccbe;
   width: 20px;
   height: 20px;
   transform: rotate(45deg);
@@ -1757,7 +1755,7 @@ html, body {
 }
 
 .timeline > li > .timeline-panel .timeline-heading {
-  background-color: #666;
+  background-color: #e0dedb;
   line-height: 50px;
   height: 50px;
 }
@@ -1767,7 +1765,7 @@ html, body {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 0;
-  color: #ffffff;
+  color: black;
   font-family: 'Quintessential';
 }
 
@@ -1778,7 +1776,8 @@ html, body {
 
 .timeline > li > .timeline-panel .timeline-heading .timeline-date {
   padding: 0 10px;
-  background-color: #9A869F;
+  background-color: #d5ccbe;
+  color: black;
 }
 
 .timeline > li > .timeline-panel .timeline-heading .timeline-position {
@@ -1805,6 +1804,7 @@ html, body {
   font-family: 'Poiret One';
   font-weight: bold;
   letter-spacing: 1px;
+  color: #e0dedb;
 }
 
 .timeline > li .timeline-rectangle {
@@ -1813,7 +1813,7 @@ html, body {
   top: 15px;
   left: 0.5px;
   right: 0;
-  background-color: #666;
+  background-color: #e0dedb;
   width: 20px;
   height: 20px;
   border: 0;
@@ -1927,9 +1927,7 @@ html, body {
 
 .portfolio-sorting {
   margin: 0;
-  border-top: 1px solid #f6f6f6;
-  border-right: 1px solid #f6f6f6;
-  border-bottom: 2px solid #9A869F;
+  border-bottom: 2px solid black;
   height: 47px;
 }
 
@@ -1948,12 +1946,13 @@ html, body {
   border-left: 1px solid #f6f6f6;
   border-right: 1px solid #f6f6f6;
   text-transform: uppercase;
+  color: black;
 }
 
 .portfolio-sorting li a:hover, .portfolio-sorting li a.active {
-  background-color: #9A869F;
+  background-color: black;
   color: #ffffff;
-  border-color: #9A869F;
+  border-color: black;
 }
 
 .portfolio-sorting li a:hover:after, .portfolio-sorting li a.active:after {
@@ -1985,7 +1984,7 @@ html, body {
   height: 0;
   border-style: solid;
   border-width: 10px 10px 0 10px;
-  border-color: #9A869F transparent transparent transparent;
+  border-color: black transparent transparent transparent;
   z-index: 99;
 }
 
@@ -1993,11 +1992,12 @@ html, body {
 .fa-solid.fa-envelope,
 .fa-solid.fa-phone
 {
-  color: black;
+  color: #e0dedb;
 }
 
 .portfolio-sorting li + li a {
   border-left: 0;
+  color: black;
 }
 
 .portfolio-sorting li + li a:after, .portfolio-sorting li + li a.active:after {
@@ -2023,7 +2023,7 @@ html, body {
 
 .portfolio-item .portfolio-item-thumb:after {
   content: '';
-  background-color: #9A869F;
+  background-color: #e0dedb;
   position: absolute;
   left: 0;
   right: 0;
@@ -2304,10 +2304,10 @@ html, body {
 
 .name
 {
-  font-family: 'Bruno Ace SC';
-  font-size: x-large;
-  letter-spacing: 2px;
-  text-decoration: underline;
+    font-family: 'Quintessential';
+    font-size: x-large;
+    letter-spacing: 2px;
+    color: #e0dedb;
 }
 .contact{
   background : #f6f6f6;
@@ -2321,11 +2321,10 @@ html, body {
   letter-spacing: 1px;
   margin-left: 6%;
   margin-top: 3%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 2%;
+  box-shadow: 0px 1px 10px 0px #e0dedb;
   border-radius: 25px;
-  color: black;
-  background: white;
+  background: black;
 }
 
 /* Section: Contact */
@@ -2389,7 +2388,7 @@ textarea.form-control {
   padding: 3%;
   text-align: center;
   border-bottom: 1px solid #dddddd;
-  background: #9A869F;
+  background: black
 }
 s
 .site-footer .container {
@@ -2411,7 +2410,7 @@ s
 }
 
 .site-footer ul a:hover {
-  color: black;
+  color: #e0dedb;
 }
 
 .site-footer a {
@@ -2421,7 +2420,7 @@ s
 }
 
 .site-footer a:hover {
-  color: #9A869F;
+  color: #e0dedb;
 }
 
 .site-footer .rectangle {
@@ -2439,8 +2438,8 @@ s
 }
 
 .site-footer .rectangle:hover {
-  background-color: #9A869F;
-  color: #ffffff;
+  background-color: #e0dedb;
+  color: black;
 }
 
 .site-footer .copyright {
@@ -2524,6 +2523,7 @@ s
   border-color: #9A869F;
 }
 
+
 .modal-content {
   padding: 0;
   border-radius: 0;
@@ -2540,7 +2540,7 @@ s
 }
 
 .site-navigation .navbar-nav {
-  padding: 2% 30% 2% 2%;
+  padding: 2%;
 }
 
 @media only screen and (max-width: 767px) 
@@ -2581,157 +2581,25 @@ s
 
 
 /* My Prem CSS Start*/
+
 .mypremcontainer
 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  height: fit-content;
+  height: 1010px;
   width: 70%;
-  margin: 3% 5% 5% 15%;
-  background: #ecf0f1;
+  margin-left: 15%;
+  background: black;
 }
 
-.mypremhead, .empmnghead, .usprjhead
+.mypremhead
 {
-  font-family: 'Bruno Ace SC', sans-serif;
-  color: white;
+  font-family: "Poiret One", sans-serif;
+  color: #e0dedb;
   font-size: xx-large;
-  margin-top: 3%;
+  margin-top: 2%;
+  font-weight: bold;
+  padding-top: 5%;
 }
-
-
-.mypremcontainer label, 
-.mypremcontainer a
-{
-  cursor: pointer;
-  user-select: none;
-  text-decoration: none;
-  display: inline-block;
-  color: inherit;
-  transition: border 0.2s;
-  border-bottom: 5px solid rgba(#a57e93, 0.2);
-  padding: 3px 2px;
-  &:hover
-  {
-    border-bottom-color: #a57e93;
-  }
-}
-
-.mypremcontainer .layout
-{
-    display: grid;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    grid-template-rows: 7% 1fr;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 10%;
-}
-
-.mypremcontainer input[type="radio"]
-{
-  display: none;
-}
-
-.mypremcontainer label.nav
-{
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border-bottom: 2px solid #a57e93;
-  background: #ecf0f1;
-  user-select: none;
-  transition: background 0.4s, padding-left 0.2s;
-  padding-left: 0;
-
- input[type="radio"]:checked + .page + &
-  {
-    background: #a57e93;
-    color: #ffffff;
-    padding-left: 20px;
-    span
-    {
-      padding-left: 20px  
-    }
-    svg
-    {
-      fill: white;
-      opacity: 1;
-    }
-  }
-  span
-  {
-    padding-left: 0px;
-    position: relative;
-  }
-  svg
-  {
-    left: -3px;
-    top: 2px;
-    position: absolute;
-    width: 20px;
-    opacity: 0;
-    transition: opacity 0.2s;
-  }
-}
-
-.mypremcontainer  .page
-{
-  grid-column-start: 1;
-  grid-row-start: 2;
-  grid-column-end: span 3;
-  padding: 0px 3%;
-  display: ruby;
-}
-
-.mypremcontainer  .page-contents > *
-{
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.2s, transform 0.2s;
-  @for $c from 1 through 20
-  {
-    &:nth-child(#{$c})
-    {
-      transition-delay: 0.2s + ($c * 0.2s);
-    }
-  }
-}
-
-.mypremcontainer  input[type="radio"] + .page
-{
-  transition: transform 0.2s;
-  transform: translateX(100%);
-}
-
-.mypremcontainer  input[type="radio"]:checked + .page
-{
-  transform: translateX(0%);
-  .page-contents > *
-  {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-.mypremcontainer .page-contents
-{
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.mypremcontainer .defaultimgmp
-{
-  max-height: 85vh;
-  margin: 8% 10% 0% 2%;
-}
-
-.mypremcontainer .registerimgmp
-{
-  height: 37vh;
-  margin: 8% 3% 0% 5%;
-}
-
 .mypremcontainer .headingpara
 {
   padding: 2%;
@@ -2739,273 +2607,40 @@ s
   letter-spacing: 2px;
   font-weight: 900;
   font-size: medium;
+  color: #e0dedb;
+}
+.projectshtml
+{
+   background: url(.assests/img/projectsBg.png) center no-repeat;
 }
 
-.mypremcontainer .registerpara
+.projectsbody
 {
-  margin-left: 50%;
-  font-family: Metal Mania;
-  letter-spacing: 2px;
-  font-size: larger;
-  margin-top: 2%;
+  background: url(.assests/img/projectsBg.png) repeat;
+  margin-top: -2%;
 }
-
-.mypremcontainer .defaultpara
+#projdescription 
 {
-  font-family: Metal Mania;
-  letter-spacing: 2px;
-  font-size: larger;
-  margin-top: 2%;
+  margin-left: 10%;
 }
-
-.mypremcontainer .editprofimgmp
+#brochure-img
 {
-  margin: 8% 10% 0% 2%;
-  height: 59vh;
+  height: 65rem;
 }
-
-.page.gifs-page .gifs 
+#gifimg
 {
-  height: 30vh;
-  margin: 11% 0% 2% 0%;
+ height: 50rem;
 }
-
-.page.gifs-page p 
+#logoimg
 {
+ height: 60rem;
+}
+#designCarousel h4,
+#designCarousel p
+ {
+  color: #e0dedb;
   font-family: "Poiret One", sans-serif;
-  letter-spacing: 2px;
-  font-weight: 600;
-  font-size: 1.2em;
+  font-weight: bold;
+  font-size: 2rem;
 }
-
-.page.gifs-page .col-md-6
-{
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-margin-top: 2%;
-width: 48%;
-margin-left: 2%;
-}
-
-
-@media only screen and (max-width: 850px) 
-{
-.mypremcontainer
-{
-  margin: 5%;
-  width: 90%;
-}
-
-.mypremcontainer .defaultimgmp 
-{
-  height: 45vh;
-  width: 40vh;
-}
-
-.mypremcontainer .registerpara
-{
-  margin-left: 0;
-}
-
-.mypremcontainer .registerimgmp
-{
-  height: 13vh;
-  width: 40vh;
-  margin: 8% 3% 0% 2%;
-}
-
-.mypremcontainer .editprofimgmp
-{
-  height: 30vh;
-  width: 40vh;
-}
-
-.page.gifs-page .gifs 
-{
-  height: 20vh;
-  margin: 11% 0% 2% 0%;
-  width: 38vh;
-}
-
-.page.gifs-page .col-md-6
-{
-width: 90%;
-margin-left: 5%;
-margin-top: 7%;
-}
-
-.mypremcontainer input[type="radio"]:checked + .page
-{
-  margin-bottom: 30%;
-}
-}
-
-/* My Prem CSS End*/
-
-
-
-/* Employee Management CSS Start*/
-.empmngimg
-{
-  width: 100%;
-  margin-left: 20%;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-
-.empmngcontainer
-{
-    width: 70%;
-    margin-left: 15%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background: white;
-}
-
-.empmngheadingpara
-{
-    padding: 2%;
-    font-family: Quintessential;
-    letter-spacing: 2px;
-    font-weight: 900;
-    font-size: medium;
-    margin-bottom: 2% !important;
-}
-
-.empmngsnapshotshead
-{
-    font-family: 'Bruno Ace SC';
-    letter-spacing: 2px;
-    padding: 1%;
-    background: #9A869F;
-    margin: 1% 5% 2% 5%;
-    color: white;
-}
-.empmngimg2
-{
-   width: 40%;
-   margin: 0%;
-}
-.empmngpara
-{
-  margin-bottom: 10%;
-  font-family: Metal Mania;
-  letter-spacing: 2px;
-  font-size: larger;
-  margin-top: 1%;
-  margin-left: 35%;
-}
-.empmngpara2
-{
-  font-family: Metal Mania;
-  letter-spacing: 2px;
-  font-size: larger;
-  margin-top: 1%;
-}
-@media only screen and (max-width: 767px) 
-{
-  .empmngcontainer
-  {
-    width: 90%;
-    margin-left: 5%;
-  }
-  .empmngimg
-  {
-    width: 96%;
-    margin-left: 2%;
-  }
-  .empmngimg2
-  {
-    width: 82%;
-    margin-left: 2%;
-  }
-  .empmngpara 
-  {
-    margin-left: 3%;
-  }
-}
-/* Employee Management CSS End*/
-
-
-
-/* USA Project CSS Start*/
-.usprjimg
-{
-  width: 100%;
-  margin-left: 20%;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-
-.usprjcontainer
-{
-    width: 70%;
-    margin-left: 15%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background: white;
-}
-
-.usprjpara
-{
-margin-bottom: 10%;
-font-family: Metal Mania;
-letter-spacing: 2px;
-font-size: larger;
-margin-top: 1%;
-margin-left: 40%;
-}
-
-.usprjheadingpara
-{
-    padding: 2%;
-    font-family: Quintessential;
-    letter-spacing: 2px;
-    font-weight: 900;
-    font-size: medium;
-    margin-bottom: 2% !important;
-    margin-left: 0%;
-}
-
-.usprjsnapshotshead
-{
-    font-family: 'Bruno Ace SC';
-    letter-spacing: 2px;
-    padding: 1%;
-    background: #9A869F;
-    margin: 1% 5% 2% 5%;
-    color: white;
-}
-.usprjimg2
-{
-  width : 40%;
-  margin: 0%;
-}
-
-.usprjpara2
-{
-  font-family: Metal Mania;
-  letter-spacing: 2px;
-  font-size: larger;
-  margin-top: 1%;
-}
-
-
-@media only screen and (max-width: 767px) 
-{
-  .usprjcontainer
-  {
-    width: 90%;
-    margin-left: 5%;
-  }
-  .usprjimg
-  {
-    width: 96%;
-    margin-left: 2%;
-  }
-  .usprjimg2
-  {
-    width: 82%;
-    margin-left: 2%;
-  }
-  .usprjpara 
-  {
-    margin-left: 3%;
-  }
-}
-/* USA Project CSS Start*/
+/* My Prem CSS Ends*/
